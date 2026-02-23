@@ -1,6 +1,4 @@
-// ===========================
-// EMAILJS CONFIGURATION
-// ===========================
+
 const EMAILJS_PUBLIC_KEY = 'zvCIPdGU_seBH-qD-';
 const EMAILJS_SERVICE_ID = 'service_odawfjm';
 const EMAILJS_TEMPLATE_ID = 'template_wxglqcx';
