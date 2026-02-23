@@ -212,6 +212,12 @@ body {
     gap: 60px;
 }
 
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .project-item {
     padding: 40px 0;
     padding-left: 40px;
@@ -277,6 +283,12 @@ body {
     gap: 60px;
 }
 
+.internship-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .internship-item {
     padding: 40px 0;
     padding-left: 40px;
@@ -286,6 +298,7 @@ body {
     border-radius: 8px;
     padding: 40px;
     box-shadow: 0 2px 8px rgba(163, 163, 152, 0.15);
+    cursor: pointer;
 }
 
 .internship-item:hover {
@@ -368,8 +381,81 @@ body {
     padding-bottom: 100px;
 }
 
+.contact-wrapper {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
 .contact-content {
+    flex: 1;
     max-width: 600px;
+}
+
+.resume-section {
+    flex-shrink: 0;
+    width: 320px;
+}
+
+.resume-card {
+    background-color: var(--porcelain);
+    border-radius: 12px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(163, 163, 152, 0.15);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(163, 163, 152, 0.25);
+}
+
+.resume-icon {
+    color: var(--accent-color);
+    margin-bottom: 25px;
+}
+
+.resume-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.resume-description {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.resume-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.4);
+}
+
+.resume-button svg {
+    flex-shrink: 0;
 }
 
 .contact-intro {
@@ -567,6 +653,19 @@ body {
     .skill {
         padding: 20px;
         font-size: 14px;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .resume-section {
+        width: 100%;
+    }
+
+    .resume-card {
+        padding: 40px 30px;
     }
 }
 
